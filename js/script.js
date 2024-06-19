@@ -2,16 +2,16 @@
 // Get a random value among rock, paper, and scissors
 
 function getComputerChoice() {
-  let cpuWeapon = (Math.random() * 3);
-  if (cpuWeapon >= 2) {
+  const randomNumber = (Math.random() * 3);
+  if (randomNumber >= 2) {
     return "Rock";
-  } else if (cpuWeapon >= 1 && cpuWeapon < 2) {
+  } else if (randomNumber >= 1) {
     return "Paper";
   } else {
     return "Scissors";
   }
 }
-// console.log(getComputerChoice()); / tested 
+// console.log(getComputerChoice()); // tested 
 
 // Step 3: Write the logic to get the human choice
 // When the user inputs a value
@@ -30,4 +30,4 @@ function getHumanChoice() {
   }
 }
 
-console.log(getHumanChoice());
+// console.log(getHumanChoice()); // tested
