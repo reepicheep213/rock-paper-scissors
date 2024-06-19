@@ -13,6 +13,7 @@ function getComputerChoice() {
 }
 // console.log(getComputerChoice()); // tested 
 
+
 // Step 3: Write the logic to get the human choice
 // When the user inputs a value
 // Get one of the valid choices depending on the user's input
@@ -30,4 +31,12 @@ function getHumanChoice() {
   }
 }
 
-console.log(getHumanChoice()); // tested
+// console.log(getHumanChoice()); // tested
+
+
+// Step 4: Declare the players score variables
+// Keep track of the user and computer scores using variables
+
+const humanScore = 0;
+const computerScore = 0;
+
