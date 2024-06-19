@@ -18,16 +18,16 @@ function getComputerChoice() {
 // Get one of the valid choices depending on the user's input
 
 function getHumanChoice() {
-  let humanWeapon = prompt("Enter \"1\" for Rock, \"2\" for Paper, or \"3\" for Scissors");
-  if (humanWeapon == 1) {
+  const userNumber = prompt("Enter \"1\" for Rock, \"2\" for Paper, or \"3\" for Scissors");
+  if (userNumber == 1) {
     return "Rock";
-  } else if (humanWeapon == 2) {
+  } else if (userNumber == 2) {
     return "Paper";
-  } else if (humanWeapon == 3) {
+  } else if (userNumber == 3) {
     return "Scissors";
   } else {
     return "Invalid";
   }
 }
 
-// console.log(getHumanChoice()); // tested
+console.log(getHumanChoice()); // tested
