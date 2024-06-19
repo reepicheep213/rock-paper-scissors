@@ -19,19 +19,19 @@ function getComputerChoice() {
 // Get one of the valid choices depending on the user's input
 
 function getHumanChoice() {
-  const userNumber = prompt("Enter \"1\" for Rock, \"2\" for Paper, or \"3\" for Scissors");
-  if (userNumber == 1) {
+  const userWeapon = prompt("Choose your weapon: Rock, Paper, or Scissors").toLowerCase();
+  if (userWeapon == "rock") {
     return "Rock";
-  } else if (userNumber == 2) {
+  } else if (userWeapon == "paper") {
     return "Paper";
-  } else if (userNumber == 3) {
+  } else if (userWeapon == "scissors") {
     return "Scissors";
   } else {
     return "Invalid";
   }
 }
 
-// console.log(getHumanChoice()); // tested
+console.log(getHumanChoice()); // tested
 
 
 // Step 4: Declare the players score variables
@@ -40,3 +40,17 @@ function getHumanChoice() {
 const humanScore = 0;
 const computerScore = 0;
 
+// Step 5: Write the logic to play a single round
+// Take human and computer choices as arguments
+// Run a single round
+// Increment the round winner's score
+// Log a winner announcement
+
+// function playRound(humanChoice, computerChoice) {
+
+// }
+
+// const humanSelection = getHumanChoice();
+// const computerSelection = getComputerChoice();
+
+// playRound(humanSelection, computerSelection);
