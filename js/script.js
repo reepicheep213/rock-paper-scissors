@@ -31,7 +31,7 @@ function getHumanChoice() {
   }
 }
 
-console.log(getHumanChoice()); // tested
+// console.log(getHumanChoice()); // tested
 
 
 // Step 4: Declare the players score variables
@@ -46,11 +46,36 @@ const computerScore = 0;
 // Increment the round winner's score
 // Log a winner announcement
 
-// function playRound(humanChoice, computerChoice) {
+function playRound(humanChoice, computerChoice) {
+  console.log("You chose " + humanChoice + "\nComputer chose " + computerChoice);
+  if (humanChoice == "Rock") {
+    if (computerChoice == "Scissors") {
+      console.log("You win! Rock beats Scissors.");
+    } else if (computerChoice == "Paper") {
+      console.log("You lose! Paper beats Rock."); 
+    } else {
+      console.log("It's a tie.");
+    };
+  } else if (humanChoice == "Paper") {
+    if (computerChoice == "Rock") {
+      console.log("You win! Paper beats Rock.");
+    } else if (computerChoice == "Scissors") {
+      console.log("You lose! Scissors beats Paper."); 
+    } else {
+      console.log("It's a tie.");
+    };
+  } else if (humanChoice == "Scissors") {
+    if (computerChoice == "Paper") {
+      console.log("You win! Scissors beats Paper.");
+    } else if (computerChoice == "Rock") {
+      console.log("You lose! Rock beats Scissors."); 
+    } else {
+      console.log("It's a tie.");
+    };
+  };
+};
 
-// }
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
 
-// const humanSelection = getHumanChoice();
-// const computerSelection = getComputerChoice();
-
-// playRound(humanSelection, computerSelection);
+playRound(humanSelection, computerSelection);
