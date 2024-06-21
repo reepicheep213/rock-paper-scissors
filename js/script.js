@@ -1,5 +1,3 @@
-// Step 2: Write the logic to get the computer choice
-
 function getComputerChoice() {
   const randomNumber = (Math.random() * 3);
   if (randomNumber >= 2) {
@@ -23,9 +21,6 @@ function getHumanChoice() {
     return userInput;
   }
 }
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
 function playGame() {
   let humanScore = 0;
@@ -54,13 +49,12 @@ function playGame() {
       return console.log('It\'s a tie.')
     }
   }
-  playRound(humanSelection, computerSelection);
-  console.log('You: ' + humanScore + ', Computer: ' + computerScore);
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     playRound(getHumanChoice(), getComputerChoice());
     console.log('You: ' + humanScore + ', Computer: ' + computerScore);
   }
+
   if (humanScore > computerScore) {
     console.log(`You won, ${humanScore} to ${computerScore}!`);
   } else if (humanScore < computerScore) {
