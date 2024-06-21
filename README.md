@@ -6,6 +6,6 @@ The project is to create a simple rock paper scissors game that can be played in
 
 ## Learning Objectives
 
-The objective is to apply JavaScript, HTML, and CSS basics as well as to practice problem-solving and researching skills.
+The objective is to apply JavaScript and practice problem-solving and researching skills, and, when the code isn't running as intended, to figure out and understand why it doesn't.
 
 ## Aditional Information
